@@ -1,0 +1,17 @@
+$structure-sidebar-desktop-width	: 220px;
+$structure-sidebar-tablet-width		: 160px;
+$structure-sidebar-mobile-width		: 100%;
+
+$structure-toolbar-desktop-width	: 60px;
+$structure-toolbar-tablet-width		: 40px;
+$structure-toolbar-mobile-width		: 100%;
+
+$concrete-margin									: 10px;
+
+$concrete-desktop-width						: 960px;
+$concrete-tablet-width						: 720px;
+$concrete-mobile-width						: 320px;
+
+$concrete-desktop-transition			: $concrete-desktop-width + $structure-sidebar-desktop-width + $structure-toolbar-desktop-width + ($concrete-margin * 4);
+$concrete-tablet-transition				: $concrete-tablet-width + $structure-sidebar-tablet-width + $structure-toolbar-tablet-width + ($concrete-margin * 4);
+$concrete-mobile-transition				: 320px;

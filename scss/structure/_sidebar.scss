@@ -1,0 +1,36 @@
+#sidebar {
+	text-align	: left;
+	
+	width				: $structure-sidebar-mobile-width;
+	@media screen and (min-width: $concrete-tablet-transition) {
+		position	: fixed;
+		left			: 0;
+		top				: 0;
+		bottom		: 0;
+		width			: $structure-sidebar-tablet-width;
+	}
+	@media screen and (min-width: $concrete-desktop-transition) {
+		width			: $structure-sidebar-desktop-width;
+	}
+	
+	ul {
+		list-style	: none;
+		
+		margin			: 0;
+		padding			: 0;
+		li {
+			margin		: 0;
+			padding		: 0;
+		}
+	}	
+	
+	&+#main {
+		margin-left			: 0;
+		@media screen and (min-width: $concrete-tablet-transition) {
+			margin-left		: $structure-sidebar-tablet-width + $concrete-margin;
+		}
+		@media screen and (min-width: $concrete-desktop-transition) {
+			margin-left		: $structure-sidebar-desktop-width + $concrete-margin;
+		}
+	}
+}

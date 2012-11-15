@@ -1,0 +1,26 @@
+#toolbar {
+	text-align	: left;
+	
+	width				: $structure-toolbar-mobile-width;
+	@media screen and (min-width: $concrete-tablet-transition) {
+		position	: fixed;
+		right			: 0;
+		top				: 0;
+		bottom		: 0;
+		width			: $structure-toolbar-tablet-width;
+	}
+	@media screen and (min-width: $concrete-desktop-transition) {
+		width			: $structure-toolbar-desktop-width;
+	}
+	
+	ul {
+		list-style	: none;
+		
+		margin			: 0;
+		padding			: 0;
+		li {
+			margin		: 0;
+			padding		: 0;
+		}
+	}	
+}
