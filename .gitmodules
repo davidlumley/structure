@@ -1,0 +1,3 @@
+[submodule "vendor/assets/concrete"]
+	path = vendor/assets/concrete
+	url = git@github.com:davidlumley/concrete.git
