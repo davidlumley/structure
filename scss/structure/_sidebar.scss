@@ -26,11 +26,14 @@
 	
 	&+#main {
 		margin-left			: 0;
+		margin-right		: 0;
 		@media screen and (min-width: $concrete-tablet-transition) {
 			margin-left		: $structure-sidebar-tablet-width + $concrete-margin;
+			margin-right	: $structure-toolbar-tablet-width + $concrete-margin;
 		}
 		@media screen and (min-width: $concrete-desktop-transition) {
 			margin-left		: $structure-sidebar-desktop-width + $concrete-margin;
+			margin-right	: $structure-toolbar-desktop-width + $concrete-margin;
 		}
 	}
 }

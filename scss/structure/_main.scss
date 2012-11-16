@@ -1,9 +1,0 @@
-#main {
-	margin-right		: 0;
-	@media screen and (min-width: $concrete-tablet-transition) {
-		margin-right	: $structure-toolbar-tablet-width + $concrete-margin;
-	}
-	@media screen and (min-width: $concrete-desktop-transition) {
-		margin-right	: $structure-toolbar-desktop-width + $concrete-margin;
-	}
-}
