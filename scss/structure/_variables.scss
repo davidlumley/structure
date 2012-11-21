@@ -1,3 +1,14 @@
+//	override concrete variables with structure
+@import	'../../vendor/assets/concrete/scss/concrete/variables';
+
+$structure-header-mobile-height		: 0;
+$structure-header-tablet-height		: 0;
+$structure-header-desktop-height	: 0;
+
+$structure-footer-mobile-height		: 0;
+$structure-footer-tablet-height		: 0;
+$structure-footer-desktop-height	: 0;
+
 $structure-sidebar-desktop-width	: 220px;
 $structure-sidebar-tablet-width		: 160px;
 $structure-sidebar-mobile-width		: 100%;
