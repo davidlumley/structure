@@ -1,11 +1,4 @@
-@import	'../vendor/assets/concrete/scss/concrete/variables';
-
-//	override concrete variables with structure
 @import	'structure/variables';
 
-@import	'structure/sidebar';
-@import	'structure/toolbar';
-//
+@import	'structure/elements';
 
-@import	'../vendor/assets/concrete/scss/concrete/mixins';
-@import	'../vendor/assets/concrete/scss/concrete/layout';

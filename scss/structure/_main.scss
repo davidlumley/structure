@@ -1,0 +1,9 @@
+#main {
+	@media screen and (min-width: $concrete-tablet-transition) {
+		position	: absolute;
+		top				: $structure-header-tablet-height;
+		bottom		: $structure-footer-tablet-height;
+
+		overflow	: auto;
+	}
+}

@@ -3,10 +3,11 @@
 	
 	width				: $structure-toolbar-mobile-width;
 	@media screen and (min-width: $concrete-tablet-transition) {
-		position	: fixed;
+		position	: absolute;
 		right			: 0;
-		top				: 0;
-		bottom		: 0;
+		overflow	: auto;
+		top				: $structure-header-tablet-height;
+		bottom		: $structure-footer-tablet-height;
 		width			: $structure-toolbar-tablet-width;
 	}
 	@media screen and (min-width: $concrete-desktop-transition) {
