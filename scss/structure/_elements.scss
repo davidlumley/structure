@@ -1,8 +1,9 @@
-//	Structure Elements
-@import	'sidebar';
-@import	'toolbar';
-@import	'main';
+html, body {
+	margin			: 0;
+	padding			: 0;
 
-//	Concrete Grid
-@import	'../../vendor/assets/concrete/scss/concrete/mixins';
-@import	'../../vendor/assets/concrete/scss/concrete/layout';
+	text-align	: left;
+
+	height			: 100%;
+}
+

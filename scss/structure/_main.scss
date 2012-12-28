@@ -1,9 +1,286 @@
-#main {
-	@media screen and (min-width: $concrete-tablet-transition) {
-		position	: absolute;
-		top				: $structure-header-tablet-height;
-		bottom		: $structure-footer-tablet-height;
+.structure-main {
+	
+	.row {
+		overflow		: auto;
+		display			: block;
+		margin			: 0 auto;
+		text-align	: left;
+		width				: $mobile-width;
+		@media screen and (min-width: $tablet-transition) {
+			width			: $tablet-width;
+		}
+		@media screen and (min-width: $desktop-transition) {
+			width			: $desktop-width;
+		}
+	}
 
-		overflow	: auto;
+	.column, .columns {
+		margin-left		: $margin;
+		margin-right	: $margin;
+		float					: left;
+
+		.column, .columns {
+			margin-right		: 0;
+			margin-left			: 0;
+			@media screen and (min-width: $tablet-transition) {
+				margin-right	: 0;
+				margin-left		: $margin * 2;
+
+				&:first-child, &.first {
+					margin-left	: 0;
+				}
+			}
+		}
+	}
+
+	.one						{ @include column-width(12,		$mobile-width); }
+	.two						{ @include column-width(12,		$mobile-width); }
+	.three					{ @include column-width(12,		$mobile-width); }
+	.four						{ @include column-width(12,		$mobile-width); }
+	.five						{ @include column-width(12,		$mobile-width); }
+	.six						{ @include column-width(12,		$mobile-width); }
+	.seven					{ @include column-width(12,		$mobile-width); }
+	.eight					{ @include column-width(12,		$mobile-width); }
+	.nine						{ @include column-width(12,		$mobile-width); }
+	.ten						{ @include column-width(12,		$mobile-width); }
+	.eleven					{ @include column-width(12,		$mobile-width); }
+	.twelve					{ @include column-width(12,		$mobile-width); }
+
+	.offset {
+		&.by-one			{ @include offset-margin(0,		$mobile-width); }
+		&.by-two			{ @include offset-margin(0,		$mobile-width); }
+		&.by-three		{ @include offset-margin(0,		$mobile-width); }
+		&.by-four			{ @include offset-margin(0,		$mobile-width); }
+		&.by-five			{ @include offset-margin(0,		$mobile-width); }
+		&.by-six			{ @include offset-margin(0,		$mobile-width); }
+		&.by-seven		{ @include offset-margin(0,		$mobile-width); }
+		&.by-eight		{ @include offset-margin(0,		$mobile-width); }
+		&.by-nine			{ @include offset-margin(0,		$mobile-width); }
+		&.by-ten			{ @include offset-margin(0,		$mobile-width); }
+		&.by-eleven		{ @include offset-margin(0,		$mobile-width); }
+	}
+	@media screen and (min-width: $tablet-transition) {
+		.one					{ @include column-width(1,		$tablet-width); }
+		.two					{ @include column-width(2,		$tablet-width); }
+		.three				{ @include column-width(3,		$tablet-width); }
+		.four					{ @include column-width(4,		$tablet-width); }
+		.five					{ @include column-width(5,		$tablet-width); }
+		.six					{ @include column-width(6,		$tablet-width); }
+		.seven				{ @include column-width(7,		$tablet-width); }
+		.eight				{ @include column-width(8,		$tablet-width); }
+		.nine					{ @include column-width(9,		$tablet-width); }
+		.ten					{ @include column-width(10,		$tablet-width); }
+		.eleven				{ @include column-width(11,		$tablet-width); }
+		.twelve				{ @include column-width(12,		$tablet-width); }
+
+		.offset {
+			&.by-one		{ @include offset-margin(1,		$tablet-width); }
+			&.by-two		{ @include offset-margin(2,		$tablet-width); }
+			&.by-three	{ @include offset-margin(3,		$tablet-width); }
+			&.by-four		{ @include offset-margin(4,		$tablet-width); }
+			&.by-five		{ @include offset-margin(5,		$tablet-width); }
+			&.by-six		{ @include offset-margin(6,		$tablet-width); }
+			&.by-seven	{ @include offset-margin(7,		$tablet-width); }
+			&.by-eight	{ @include offset-margin(8,		$tablet-width); }
+			&.by-nine		{ @include offset-margin(9,		$tablet-width); }
+			&.by-ten		{ @include offset-margin(10,	$tablet-width); }
+			&.by-eleven	{ @include offset-margin(11,	$tablet-width); }
+		}
+	}
+	@media screen and (min-width: $desktop-transition) {
+		.one					{ @include column-width(1,		$desktop-width); }
+		.two					{ @include column-width(2,		$desktop-width); }
+		.three				{ @include column-width(3,		$desktop-width); }
+		.four					{ @include column-width(4,		$desktop-width); }
+		.five					{ @include column-width(5,		$desktop-width); }
+		.six					{ @include column-width(6,		$desktop-width); }
+		.seven				{ @include column-width(7,		$desktop-width); }
+		.eight				{ @include column-width(8,		$desktop-width); }
+		.nine					{ @include column-width(9,		$desktop-width); }
+		.ten					{ @include column-width(10,		$desktop-width); }
+		.eleven				{ @include column-width(11,		$desktop-width); }
+		.twelve				{ @include column-width(12,		$desktop-width); }
+
+		.offset {
+			&.by-one		{ @include offset-margin(1,		$desktop-width); }
+			&.by-two		{ @include offset-margin(2,		$desktop-width); }
+			&.by-three	{ @include offset-margin(3,		$desktop-width); }
+			&.by-four		{ @include offset-margin(4,		$desktop-width); }
+			&.by-five		{ @include offset-margin(5,		$desktop-width); }
+			&.by-six		{ @include offset-margin(6,		$desktop-width); }
+			&.by-seven	{ @include offset-margin(7,		$desktop-width); }
+			&.by-eight	{ @include offset-margin(8,		$desktop-width); }
+			&.by-nine		{ @include offset-margin(9,		$desktop-width); }
+			&.by-ten		{ @include offset-margin(10,	$desktop-width); }
+			&.by-eleven	{ @include offset-margin(11,	$desktop-width); }
+		}
+	}
+
+	.mobile-only {
+		@media screen and (min-width: $tablet-transition) {
+			display		: none;
+		}
+	}
+
+	.tablet-only {
+		@media screen and (max-width: $tablet-transition) {
+			display		: none;
+		}
+
+		@media screen and (min-width: $desktop-transition) {
+			display		: none;
+		}
+	}
+
+	.desktop-only {
+		@media screen and (max-width: $desktop-transition) {
+			display		: none;
+		}
+	}
+
+}
+
+.structure-sidebar + .structure-main {
+
+	margin-left				: 0;
+	@media screen and (min-width: $tablet-single-sidebar-transition) {
+		margin-left			: $sidebar-tablet-width;
+	}
+	@media screen and (min-width: $desktop-single-sidebar-transition) {
+		margin-left			: $sidebar-desktop-width;
+	}
+
+	.row {
+		//margin-left : $margin;
+		width				: $mobile-width;
+		@media screen and (min-width: $tablet-single-sidebar-transition) {
+			width			: $tablet-width;
+		}
+		@media screen and (min-width: $desktop-single-sidebar-transition) {
+			width			: $desktop-width;
+		}
+	}
+
+	.column, .columns {
+		margin-left		: $margin;
+		margin-right	: $margin;
+
+		.column, .columns {
+			margin-right		: 0;
+			margin-left			: 0;
+			@media screen and (min-width: $tablet-single-sidebar-transition) {
+				margin-right	: 0;
+				margin-left		: $margin * 2;
+
+				&:first-child, &.first {
+					margin-left	: 0;
+				}
+			}
+		}
+	}
+
+	.one						{ @include column-width(12,		$mobile-width); }
+	.two						{ @include column-width(12,		$mobile-width); }
+	.three					{ @include column-width(12,		$mobile-width); }
+	.four						{ @include column-width(12,		$mobile-width); }
+	.five						{ @include column-width(12,		$mobile-width); }
+	.six						{ @include column-width(12,		$mobile-width); }
+	.seven					{ @include column-width(12,		$mobile-width); }
+	.eight					{ @include column-width(12,		$mobile-width); }
+	.nine						{ @include column-width(12,		$mobile-width); }
+	.ten						{ @include column-width(12,		$mobile-width); }
+	.eleven					{ @include column-width(12,		$mobile-width); }
+	.twelve					{ @include column-width(12,		$mobile-width); }
+
+	.offset {
+		&.by-one			{ @include offset-margin(0,		$mobile-width); }
+		&.by-two			{ @include offset-margin(0,		$mobile-width); }
+		&.by-three		{ @include offset-margin(0,		$mobile-width); }
+		&.by-four			{ @include offset-margin(0,		$mobile-width); }
+		&.by-five			{ @include offset-margin(0,		$mobile-width); }
+		&.by-six			{ @include offset-margin(0,		$mobile-width); }
+		&.by-seven		{ @include offset-margin(0,		$mobile-width); }
+		&.by-eight		{ @include offset-margin(0,		$mobile-width); }
+		&.by-nine			{ @include offset-margin(0,		$mobile-width); }
+		&.by-ten			{ @include offset-margin(0,		$mobile-width); }
+		&.by-eleven		{ @include offset-margin(0,		$mobile-width); }
+	}
+	@media screen and (min-width: $tablet-single-sidebar-transition) {
+		.one					{ @include column-width(1,		$tablet-width); }
+		.two					{ @include column-width(2,		$tablet-width); }
+		.three				{ @include column-width(3,		$tablet-width); }
+		.four					{ @include column-width(4,		$tablet-width); }
+		.five					{ @include column-width(5,		$tablet-width); }
+		.six					{ @include column-width(6,		$tablet-width); }
+		.seven				{ @include column-width(7,		$tablet-width); }
+		.eight				{ @include column-width(8,		$tablet-width); }
+		.nine					{ @include column-width(9,		$tablet-width); }
+		.ten					{ @include column-width(10,		$tablet-width); }
+		.eleven				{ @include column-width(11,		$tablet-width); }
+		.twelve				{ @include column-width(12,		$tablet-width); }
+
+		.offset {
+			&.by-one		{ @include offset-margin(1,		$tablet-width); }
+			&.by-two		{ @include offset-margin(2,		$tablet-width); }
+			&.by-three	{ @include offset-margin(3,		$tablet-width); }
+			&.by-four		{ @include offset-margin(4,		$tablet-width); }
+			&.by-five		{ @include offset-margin(5,		$tablet-width); }
+			&.by-six		{ @include offset-margin(6,		$tablet-width); }
+			&.by-seven	{ @include offset-margin(7,		$tablet-width); }
+			&.by-eight	{ @include offset-margin(8,		$tablet-width); }
+			&.by-nine		{ @include offset-margin(9,		$tablet-width); }
+			&.by-ten		{ @include offset-margin(10,	$tablet-width); }
+			&.by-eleven	{ @include offset-margin(11,	$tablet-width); }
+		}
+	}
+	@media screen and (min-width: $desktop-single-sidebar-transition) {
+		.one					{ @include column-width(1,		$desktop-width); }
+		.two					{ @include column-width(2,		$desktop-width); }
+		.three				{ @include column-width(3,		$desktop-width); }
+		.four					{ @include column-width(4,		$desktop-width); }
+		.five					{ @include column-width(5,		$desktop-width); }
+		.six					{ @include column-width(6,		$desktop-width); }
+		.seven				{ @include column-width(7,		$desktop-width); }
+		.eight				{ @include column-width(8,		$desktop-width); }
+		.nine					{ @include column-width(9,		$desktop-width); }
+		.ten					{ @include column-width(10,		$desktop-width); }
+		.eleven				{ @include column-width(11,		$desktop-width); }
+		.twelve				{ @include column-width(12,		$desktop-width); }
+
+		.offset {
+			&.by-one		{ @include offset-margin(1,		$desktop-width); }
+			&.by-two		{ @include offset-margin(2,		$desktop-width); }
+			&.by-three	{ @include offset-margin(3,		$desktop-width); }
+			&.by-four		{ @include offset-margin(4,		$desktop-width); }
+			&.by-five		{ @include offset-margin(5,		$desktop-width); }
+			&.by-six		{ @include offset-margin(6,		$desktop-width); }
+			&.by-seven	{ @include offset-margin(7,		$desktop-width); }
+			&.by-eight	{ @include offset-margin(8,		$desktop-width); }
+			&.by-nine		{ @include offset-margin(9,		$desktop-width); }
+			&.by-ten		{ @include offset-margin(10,	$desktop-width); }
+			&.by-eleven	{ @include offset-margin(11,	$desktop-width); }
+		}
+	}
+
+	.mobile-only {
+		@media screen and (min-width: $tablet-single-sidebar-transition) {
+			display		: none;
+		}
+	}
+
+	.tablet-only {
+		@media screen and (max-width: $tablet-single-sidebar-transition) {
+			display		: none;
+		}
+
+		@media screen and (min-width: $desktop-single-sidebar-transition) {
+			display		: none;
+		}
+	}
+
+	.desktop-only {
+		@media screen and (max-width: $desktop-single-sidebar-transition) {
+			display		: none;
+		}
 	}
 }
