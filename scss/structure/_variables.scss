@@ -4,6 +4,14 @@ $desktop-width			: 960px;
 $tablet-width				: 720px;
 $mobile-width				: 320px;
 
+$header-desktop-height	: 80px;
+$header-tablet-height		: 80px;
+$header-mobile-height		: 80px;
+
+$footer-desktop-height	: 0;
+$footer-tablet-height		: 0;
+$footer-mobile-height		: 0;
+
 $desktop-transition	: $desktop-width;
 $tablet-transition	: $tablet-width;
 $mobile-transition	: $mobile-width;

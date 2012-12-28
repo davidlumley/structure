@@ -22,57 +22,13 @@
 
 	@media screen and (min-width: $tablet-single-sidebar-transition) {
 		width		: $sidebar-tablet-width;
+		top			: $header-tablet-height;
+		bottom	: $footer-tablet-height;
 	}
 	@media screen and (min-width: $desktop-single-sidebar-transition) {
 		width		: $sidebar-desktop-width;
+		top			: $header-desktop-height;
+		bottom	: $footer-desktop-height;
 	}
-
-	&.mobile {
-
-	}
+	
 }
-
-//.structure-sidebar:first-child {
-//	left			: 0;
-//}
-//
-//.structure-main + .structure-sidebar {
-//	right			: 0;
-//}
-//
-//.structure-sidebar {
-//	width			: $sidebar-mobile-width;
-//
-//	position	: absolute;
-//
-//	top				: 0;
-//
-//	ul {
-//		list-style	: none;
-//		
-//		margin			: 0;
-//		padding			: 0;
-//		li {
-//			margin		: 0;
-//			padding		: 0;
-//		}
-//	}	
-//
-//	@media screen and (min-width: $tablet-transition) {
-//		width		: $sidebar-tablet-width;
-//	}
-//	
-//	@media screen and (min-width: $desktop-transition) {
-//		width		: $sidebar-desktop-width;
-//	}
-//
-//	&+.structure-main {
-//		//margin-left			: 0;
-//		@media screen and (min-width: $tablet-transition) {
-//			//margin-left		: $sidebar-tablet-width + $margin;
-//		}
-//		@media screen and (min-width: $desktop-transition) {
-//			//margin-left		: $sidebar-desktop-width + $margin;
-//		}
-//	}
-//}
