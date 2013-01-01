@@ -1,19 +1,14 @@
-#sidebar {
-	text-align	: left;
-	
-	width				: $structure-sidebar-mobile-width;
-	@media screen and (min-width: $concrete-tablet-transition) {
-		position	: absolute;
-		left			: 0;
-		top				: $structure-header-tablet-height;
-		bottom		: $structure-footer-tablet-height;
-		width			: $structure-sidebar-tablet-width;
-		overflow	: auto;
-	}
-	@media screen and (min-width: $concrete-desktop-transition) {
-		width			: $structure-sidebar-desktop-width;
-	}
-	
+.structure-sidebar {
+
+	position	: fixed;
+	overflow	: auto;
+
+	top			: 0;
+	bottom	: 0;
+	left		: 0;
+
+	width		: 100%;
+
 	ul {
 		list-style	: none;
 		
@@ -23,18 +18,17 @@
 			margin		: 0;
 			padding		: 0;
 		}
-	}	
-	
-	&+#main {
-		margin-left			: 0;
-		margin-right		: 0;
-		@media screen and (min-width: $concrete-tablet-transition) {
-			margin-left		: $structure-sidebar-tablet-width + $concrete-margin;
-			margin-right	: $structure-toolbar-tablet-width + $concrete-margin;
-		}
-		@media screen and (min-width: $concrete-desktop-transition) {
-			margin-left		: $structure-sidebar-desktop-width + $concrete-margin;
-			margin-right	: $structure-toolbar-desktop-width + $concrete-margin;
-		}
 	}
+
+	@media screen and (min-width: $tablet-single-sidebar-transition) {
+		width		: $sidebar-tablet-width;
+		top			: $header-tablet-height;
+		bottom	: $footer-tablet-height;
+	}
+	@media screen and (min-width: $desktop-single-sidebar-transition) {
+		width		: $sidebar-desktop-width;
+		top			: $header-desktop-height;
+		bottom	: $footer-desktop-height;
+	}
+	
 }

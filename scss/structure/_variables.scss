@@ -1,22 +1,26 @@
-//	override concrete variables with structure
-@import	'../../vendor/assets/concrete/scss/concrete/variables';
+$margin 						: 10px;
 
-$structure-header-mobile-height		: 0;
-$structure-header-tablet-height		: 0;
-$structure-header-desktop-height	: 0;
+$desktop-width			: 960px;
+$tablet-width				: 720px;
+$mobile-width				: 320px;
 
-$structure-footer-mobile-height		: 0;
-$structure-footer-tablet-height		: 0;
-$structure-footer-desktop-height	: 0;
+$header-desktop-height	: 80px;
+$header-tablet-height		: 80px;
+$header-mobile-height		: 80px;
 
-$structure-sidebar-desktop-width	: 220px;
-$structure-sidebar-tablet-width		: 160px;
-$structure-sidebar-mobile-width		: 100%;
+$footer-desktop-height	: 0;
+$footer-tablet-height		: 0;
+$footer-mobile-height		: 0;
 
-$structure-toolbar-desktop-width	: 60px;
-$structure-toolbar-tablet-width		: 40px;
-$structure-toolbar-mobile-width		: 100%;
+$desktop-transition	: $desktop-width;
+$tablet-transition	: $tablet-width;
+$mobile-transition	: $mobile-width;
 
-$concrete-desktop-transition			: $concrete-desktop-width + $structure-sidebar-desktop-width + $structure-toolbar-desktop-width + ($concrete-margin * 4);
-$concrete-tablet-transition				: $concrete-tablet-width + $structure-sidebar-tablet-width + $structure-toolbar-tablet-width + ($concrete-margin * 4);
-$concrete-mobile-transition				: 320px;
+$sidebar-desktop-width	:	320px;
+$sidebar-tablet-width		:	240px;
+$sidebar-mobile-width		:	100%;
+
+$mobile-single-sidebar-transition		: $mobile-width;
+$tablet-single-sidebar-transition		: $tablet-width + $sidebar-tablet-width;
+$desktop-single-sidebar-transition	: $desktop-width + $sidebar-desktop-width;
+

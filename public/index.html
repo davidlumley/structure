@@ -7,10 +7,22 @@
 			body {
 				font-family	: sans-serif;
 			}
+			.structure-sidebar {
+				background-color: #333;
+				color: #ddd;
+			}
+
+			.structure-main {
+				background-color: #eee;
+			}
 		</style>
 	</head>
 	<body>
-		<div id="sidebar">
+		<header class="structure-header">
+			<h1>Structure</h1>
+		</header>
+		
+		<div class="structure-sidebar">
 			<ul>
 				<li>A Sidebar Item</li>
 				<li>Another Sidebar Item</li>
@@ -35,7 +47,7 @@
 			</ul>
 		</div>
 		
-		<div id="main">
+		<div class="structure-main">
 			<article class="row">
 				<div class="twelve columns mobile-only">
 					<p>This row will only show up on at widths smaller than 720px</p>
@@ -108,14 +120,6 @@
 					Filler text provided by <a href="http://www.itcrowdipsum.com">www.itcrowdipsum.com</a>.
 				</p>
 			</footer>
-		</div>
-		<div id="toolbar">
-			<ul>
-				<li>A</li>
-				<li>B</li>
-				<li>C</li>
-				<li>D</li>
-			</ul>
 		</div>
 	</body>
 </html>
