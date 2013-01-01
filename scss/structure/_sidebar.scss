@@ -10,11 +10,13 @@
 
 	width				: $margin;
 
+	z-index			: 100;
+
 	@media screen and (min-width: $desktop-transition + $sidebar-desktop-width) {
 		width					: $sidebar-desktop-width;
 	}
 
-	& + .structure-main {
+	& ~ .structure-header, & ~ .structure-main {
 		@media screen and (min-width: $desktop-transition + $sidebar-desktop-width) {
 			margin-left	: $sidebar-desktop-width;
 		}
