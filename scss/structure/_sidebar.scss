@@ -9,6 +9,20 @@
 	left				: 0;
 
 	width				: $margin;
+
+	@media screen and (min-width: $desktop-transition + $sidebar-desktop-width) {
+		width					: $sidebar-desktop-width;
+	}
+
+	& + .structure-main {
+		@media screen and (min-width: $desktop-transition + $sidebar-desktop-width) {
+			margin-left	: $sidebar-desktop-width;
+		}
+		@media screen and (min-width: $desktop-transition + $sidebar-desktop-width * 2) {
+			margin-left		: 0;
+		}
+	}
+
 	&:hover, &.active {
 		width			: $sidebar-mobile-width;
 		@media screen and (min-width: $tablet-transition) {
@@ -18,6 +32,7 @@
 			width			: $sidebar-desktop-width;
 		}
 	}
+
 	nav {
 		width			: $sidebar-mobile-width;
 		@media screen and (min-width: $tablet-transition) {

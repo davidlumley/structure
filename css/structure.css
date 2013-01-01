@@ -190,6 +190,15 @@ html, body {
   bottom: 0;
   left: 0;
   width: 10px; }
+  @media screen and (min-width: 1280px) {
+    .structure-sidebar {
+      width: 320px; } }
+  @media screen and (min-width: 1280px) {
+    .structure-sidebar + .structure-main {
+      margin-left: 320px; } }
+  @media screen and (min-width: 1600px) {
+    .structure-sidebar + .structure-main {
+      margin-left: 0; } }
   .structure-sidebar:hover, .structure-sidebar.active {
     width: 100%; }
     @media screen and (min-width: 720px) {
