@@ -1,2 +1,10 @@
-@import 'variables';
-@import 'elements';
+@import 'structure/variables';
+@import 'structure/mixins';
+
+@import	'structure/elements';
+
+@import	'structure/main';
+@import 'structure/sidebar';
+
+@import 'structure/header';
+@import 'structure/footer';
