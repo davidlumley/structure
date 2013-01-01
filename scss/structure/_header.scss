@@ -1,12 +1,2 @@
 .structure-header {
-	overflow	: auto;
-	clear			: both;
-
-	height		: $header-mobile-height;
-	@media screen and (min-width: $tablet-transition) {
-		height	: $header-tablet-height;
-	}
-	@media screen and (min-width: $desktop-transition) {
-		height	: $header-desktop-height;
-	}
 }

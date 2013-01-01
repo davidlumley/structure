@@ -1,34 +1,30 @@
 .structure-sidebar {
+	position		: fixed;
+	overflow		: auto;
+	overflow-x	: hidden;
 
-	position	: fixed;
-	overflow	: auto;
+	top					: 0;
+	bottom			: 0;
 
-	top			: 0;
-	bottom	: 0;
-	left		: 0;
+	left				: 0;
 
-	width		: 100%;
-
-	ul {
-		list-style	: none;
-		
-		margin			: 0;
-		padding			: 0;
-		li {
-			margin		: 0;
-			padding		: 0;
+	width				: $margin;
+	&:hover, &.active {
+		width			: $sidebar-mobile-width;
+		@media screen and (min-width: $tablet-transition) {
+			width			: $sidebar-tablet-width;
+		}
+		@media screen and (min-width: $desktop-transition) {
+			width			: $sidebar-desktop-width;
 		}
 	}
-
-	@media screen and (min-width: $tablet-single-sidebar-transition) {
-		width		: $sidebar-tablet-width;
-		top			: $header-tablet-height;
-		bottom	: $footer-tablet-height;
+	nav {
+		width			: $sidebar-mobile-width;
+		@media screen and (min-width: $tablet-transition) {
+			width			: $sidebar-tablet-width;
+		}
+		@media screen and (min-width: $desktop-transition) {
+			width			: $sidebar-desktop-width;
+		}
 	}
-	@media screen and (min-width: $desktop-single-sidebar-transition) {
-		width		: $sidebar-desktop-width;
-		top			: $header-desktop-height;
-		bottom	: $footer-desktop-height;
-	}
-	
 }
