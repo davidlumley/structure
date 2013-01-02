@@ -182,7 +182,7 @@ html, body {
   .structure-main .desktop-only {
     display: none; } }
 
-.structure-sidebar {
+#structure-sidebar {
   position: fixed;
   overflow: auto;
   overflow-x: hidden;
@@ -192,24 +192,24 @@ html, body {
   width: 10px;
   z-index: 100; }
   @media screen and (min-width: 1280px) {
-    .structure-sidebar {
+    #structure-sidebar {
       width: 320px; } }
   @media screen and (min-width: 1280px) {
-    .structure-sidebar ~ .structure-header, .structure-sidebar ~ .structure-main {
+    #structure-sidebar ~ .structure-header, #structure-sidebar ~ .structure-main {
       margin-left: 320px; } }
-  .structure-sidebar:hover, .structure-sidebar.active {
+  #structure-sidebar:hover, #structure-sidebar.active {
     width: 100%; }
     @media screen and (min-width: 720px) {
-      .structure-sidebar:hover, .structure-sidebar.active {
+      #structure-sidebar:hover, #structure-sidebar.active {
         width: 320px; } }
     @media screen and (min-width: 960px) {
-      .structure-sidebar:hover, .structure-sidebar.active {
+      #structure-sidebar:hover, #structure-sidebar.active {
         width: 320px; } }
-  .structure-sidebar nav {
+  #structure-sidebar nav {
     width: 100%; }
     @media screen and (min-width: 720px) {
-      .structure-sidebar nav {
+      #structure-sidebar nav {
         width: 320px; } }
     @media screen and (min-width: 960px) {
-      .structure-sidebar nav {
+      #structure-sidebar nav {
         width: 320px; } }
