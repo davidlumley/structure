@@ -12,32 +12,32 @@
 
 	z-index			: 100;
 
-	@media screen and (min-width: $desktop-transition + $sidebar-desktop-width) {
+	@media screen and (min-width: $desktop-width + $sidebar-desktop-width) {
 		width					: $sidebar-desktop-width;
 	}
 
 	& ~ .structure-header, & ~ .structure-main {
-		@media screen and (min-width: $desktop-transition + $sidebar-desktop-width) {
+		@media screen and (min-width: $desktop-width + $sidebar-desktop-width) {
 			margin-left	: $sidebar-desktop-width;
 		}
 	}
 
 	&.no-touch:hover, &.active {
 		width			: $sidebar-mobile-width;
-		@media screen and (min-width: $tablet-transition) {
+		@media screen and (min-width: $tablet-width) {
 			width			: $sidebar-tablet-width;
 		}
-		@media screen and (min-width: $desktop-transition) {
+		@media screen and (min-width: $desktop-width) {
 			width			: $sidebar-desktop-width;
 		}
 	}
 
 	nav {
 		width			: $sidebar-mobile-width;
-		@media screen and (min-width: $tablet-transition) {
+		@media screen and (min-width: $tablet-width) {
 			width			: $sidebar-tablet-width;
 		}
-		@media screen and (min-width: $desktop-transition) {
+		@media screen and (min-width: $desktop-width) {
 			width			: $sidebar-desktop-width;
 		}
 	}
