@@ -22,7 +22,7 @@
 		}
 	}
 
-	&:hover, &.active {
+	&.no-touch:hover, &.active {
 		width			: $sidebar-mobile-width;
 		@media screen and (min-width: $tablet-transition) {
 			width			: $sidebar-tablet-width;
