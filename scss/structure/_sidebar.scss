@@ -26,7 +26,7 @@
 		width					: $sidebar-desktop-width;
 	}
 
-	& ~ .structure-header, & ~ .structure-grid {
+	& ~ .structure-content {
 		@media screen and (min-width: $desktop-width + $sidebar-desktop-width) {
 			margin-left	: $sidebar-desktop-width;
 		}

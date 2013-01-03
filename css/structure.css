@@ -200,7 +200,7 @@ html, body {
     #structure-sidebar {
       width: 320px; } }
   @media screen and (min-width: 1280px) {
-    #structure-sidebar ~ .structure-header, #structure-sidebar ~ .structure-grid {
+    #structure-sidebar ~ .structure-content {
       margin-left: 320px; } }
   #structure-sidebar:not(.touch-enabled):hover, #structure-sidebar.active {
     width: 100%; }
