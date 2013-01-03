@@ -1,0 +1,8 @@
+#structure-sidebar:hover, #structure-sidebar.active {
+  width: 100%; }
+  @media screen and (min-width: 720px) {
+    #structure-sidebar:hover, #structure-sidebar.active {
+      width: 320px; } }
+  @media screen and (min-width: 960px) {
+    #structure-sidebar:hover, #structure-sidebar.active {
+      width: 320px; } }

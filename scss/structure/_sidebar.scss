@@ -1,34 +1,54 @@
-.structure-sidebar {
+#structure-sidebar {
+	position		: fixed;
+	overflow		: auto;
+	overflow-x	: hidden;
 
-	position	: fixed;
-	overflow	: auto;
+	top					: 0;
+	bottom			: 0;
 
-	top			: 0;
-	bottom	: 0;
-	left		: 0;
+	left				: 0;
 
-	width		: 100%;
+	width				: $margin;
 
-	ul {
-		list-style	: none;
-		
-		margin			: 0;
-		padding			: 0;
-		li {
-			margin		: 0;
-			padding		: 0;
+	z-index			: 100;
+
+	nav {
+		ul {
+			list-style	: none;
+			&, li {
+				margin			: 0;
+				padding			: 0;
+			}
 		}
 	}
 
-	@media screen and (min-width: $tablet-single-sidebar-transition) {
-		width		: $sidebar-tablet-width;
-		top			: $header-tablet-height;
-		bottom	: $footer-tablet-height;
+	@media screen and (min-width: $desktop-width + $sidebar-desktop-width) {
+		width					: $sidebar-desktop-width;
 	}
-	@media screen and (min-width: $desktop-single-sidebar-transition) {
-		width		: $sidebar-desktop-width;
-		top			: $header-desktop-height;
-		bottom	: $footer-desktop-height;
+
+	& ~ .structure-content {
+		@media screen and (min-width: $desktop-width + $sidebar-desktop-width) {
+			margin-left	: $sidebar-desktop-width;
+		}
 	}
-	
+
+	&:not(.touch-enabled):hover, &.active {
+		width			: $sidebar-mobile-width;
+		@media screen and (min-width: $tablet-width) {
+			width			: $sidebar-tablet-width;
+		}
+		@media screen and (min-width: $desktop-width) {
+			width			: $sidebar-desktop-width;
+		}
+	}
+
+	nav {
+		width			: $sidebar-mobile-width;
+		@media screen and (min-width: $tablet-width) {
+			width			: $sidebar-tablet-width;
+		}
+		@media screen and (min-width: $desktop-width) {
+			width			: $sidebar-desktop-width;
+		}
+	}
 }

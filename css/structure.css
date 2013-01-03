@@ -4,408 +4,217 @@ html, body {
   text-align: left;
   height: 100%; }
 
-.structure-main .row {
+.structure-grid .row {
   overflow: auto;
   display: block;
   margin: 0 auto;
   text-align: left;
   width: 320px; }
   @media screen and (min-width: 720px) {
-    .structure-main .row {
+    .structure-grid .row {
       width: 720px; } }
   @media screen and (min-width: 960px) {
-    .structure-main .row {
+    .structure-grid .row {
       width: 960px; } }
-.structure-main .column, .structure-main .columns {
+.structure-grid .column, .structure-grid .columns {
   margin-left: 10px;
   margin-right: 10px;
   float: left; }
-  .structure-main .column .column, .structure-main .column .columns, .structure-main .columns .column, .structure-main .columns .columns {
+  .structure-grid .column .column, .structure-grid .column .columns, .structure-grid .columns .column, .structure-grid .columns .columns {
     margin-right: 0;
     margin-left: 0; }
     @media screen and (min-width: 720px) {
-      .structure-main .column .column, .structure-main .column .columns, .structure-main .columns .column, .structure-main .columns .columns {
+      .structure-grid .column .column, .structure-grid .column .columns, .structure-grid .columns .column, .structure-grid .columns .columns {
         margin-right: 0;
         margin-left: 20px; }
-        .structure-main .column .column:first-child, .structure-main .column .column.first, .structure-main .column .columns:first-child, .structure-main .column .columns.first, .structure-main .columns .column:first-child, .structure-main .columns .column.first, .structure-main .columns .columns:first-child, .structure-main .columns .columns.first {
+        .structure-grid .column .column:first-child, .structure-grid .column .column.first, .structure-grid .column .columns:first-child, .structure-grid .column .columns.first, .structure-grid .columns .column:first-child, .structure-grid .columns .column.first, .structure-grid .columns .columns:first-child, .structure-grid .columns .columns.first {
           margin-left: 0; } }
-.structure-main .one {
+.structure-grid .one {
   width: 300px; }
-.structure-main .two {
+.structure-grid .two {
   width: 300px; }
-.structure-main .three {
+.structure-grid .three {
   width: 300px; }
-.structure-main .four {
+.structure-grid .four {
   width: 300px; }
-.structure-main .five {
+.structure-grid .five {
   width: 300px; }
-.structure-main .six {
+.structure-grid .six {
   width: 300px; }
-.structure-main .seven {
+.structure-grid .seven {
   width: 300px; }
-.structure-main .eight {
+.structure-grid .eight {
   width: 300px; }
-.structure-main .nine {
+.structure-grid .nine {
   width: 300px; }
-.structure-main .ten {
+.structure-grid .ten {
   width: 300px; }
-.structure-main .eleven {
+.structure-grid .eleven {
   width: 300px; }
-.structure-main .twelve {
+.structure-grid .twelve {
   width: 300px; }
-.structure-main .offset.by-one {
+.structure-grid .offset.by-one {
   margin-left: 10px; }
-.structure-main .offset.by-two {
+.structure-grid .offset.by-two {
   margin-left: 10px; }
-.structure-main .offset.by-three {
+.structure-grid .offset.by-three {
   margin-left: 10px; }
-.structure-main .offset.by-four {
+.structure-grid .offset.by-four {
   margin-left: 10px; }
-.structure-main .offset.by-five {
+.structure-grid .offset.by-five {
   margin-left: 10px; }
-.structure-main .offset.by-six {
+.structure-grid .offset.by-six {
   margin-left: 10px; }
-.structure-main .offset.by-seven {
+.structure-grid .offset.by-seven {
   margin-left: 10px; }
-.structure-main .offset.by-eight {
+.structure-grid .offset.by-eight {
   margin-left: 10px; }
-.structure-main .offset.by-nine {
+.structure-grid .offset.by-nine {
   margin-left: 10px; }
-.structure-main .offset.by-ten {
+.structure-grid .offset.by-ten {
   margin-left: 10px; }
-.structure-main .offset.by-eleven {
+.structure-grid .offset.by-eleven {
   margin-left: 10px; }
 @media screen and (min-width: 720px) {
-  .structure-main .one {
+  .structure-grid .one {
     width: 40px; }
-  .structure-main .two {
+  .structure-grid .two {
     width: 100px; }
-  .structure-main .three {
+  .structure-grid .three {
     width: 160px; }
-  .structure-main .four {
+  .structure-grid .four {
     width: 220px; }
-  .structure-main .five {
+  .structure-grid .five {
     width: 280px; }
-  .structure-main .six {
+  .structure-grid .six {
     width: 340px; }
-  .structure-main .seven {
+  .structure-grid .seven {
     width: 400px; }
-  .structure-main .eight {
+  .structure-grid .eight {
     width: 460px; }
-  .structure-main .nine {
+  .structure-grid .nine {
     width: 520px; }
-  .structure-main .ten {
+  .structure-grid .ten {
     width: 580px; }
-  .structure-main .eleven {
+  .structure-grid .eleven {
     width: 640px; }
-  .structure-main .twelve {
+  .structure-grid .twelve {
     width: 700px; }
-  .structure-main .offset.by-one {
+  .structure-grid .offset.by-one {
     margin-left: 70px; }
-  .structure-main .offset.by-two {
+  .structure-grid .offset.by-two {
     margin-left: 130px; }
-  .structure-main .offset.by-three {
+  .structure-grid .offset.by-three {
     margin-left: 190px; }
-  .structure-main .offset.by-four {
+  .structure-grid .offset.by-four {
     margin-left: 250px; }
-  .structure-main .offset.by-five {
+  .structure-grid .offset.by-five {
     margin-left: 310px; }
-  .structure-main .offset.by-six {
+  .structure-grid .offset.by-six {
     margin-left: 370px; }
-  .structure-main .offset.by-seven {
+  .structure-grid .offset.by-seven {
     margin-left: 430px; }
-  .structure-main .offset.by-eight {
+  .structure-grid .offset.by-eight {
     margin-left: 490px; }
-  .structure-main .offset.by-nine {
+  .structure-grid .offset.by-nine {
     margin-left: 550px; }
-  .structure-main .offset.by-ten {
+  .structure-grid .offset.by-ten {
     margin-left: 610px; }
-  .structure-main .offset.by-eleven {
+  .structure-grid .offset.by-eleven {
     margin-left: 670px; } }
 @media screen and (min-width: 960px) {
-  .structure-main .one {
+  .structure-grid .one {
     width: 60px; }
-  .structure-main .two {
+  .structure-grid .two {
     width: 140px; }
-  .structure-main .three {
+  .structure-grid .three {
     width: 220px; }
-  .structure-main .four {
+  .structure-grid .four {
     width: 300px; }
-  .structure-main .five {
+  .structure-grid .five {
     width: 380px; }
-  .structure-main .six {
+  .structure-grid .six {
     width: 460px; }
-  .structure-main .seven {
+  .structure-grid .seven {
     width: 540px; }
-  .structure-main .eight {
+  .structure-grid .eight {
     width: 620px; }
-  .structure-main .nine {
+  .structure-grid .nine {
     width: 700px; }
-  .structure-main .ten {
+  .structure-grid .ten {
     width: 780px; }
-  .structure-main .eleven {
+  .structure-grid .eleven {
     width: 860px; }
-  .structure-main .twelve {
+  .structure-grid .twelve {
     width: 940px; }
-  .structure-main .offset.by-one {
+  .structure-grid .offset.by-one {
     margin-left: 90px; }
-  .structure-main .offset.by-two {
+  .structure-grid .offset.by-two {
     margin-left: 170px; }
-  .structure-main .offset.by-three {
+  .structure-grid .offset.by-three {
     margin-left: 250px; }
-  .structure-main .offset.by-four {
+  .structure-grid .offset.by-four {
     margin-left: 330px; }
-  .structure-main .offset.by-five {
+  .structure-grid .offset.by-five {
     margin-left: 410px; }
-  .structure-main .offset.by-six {
+  .structure-grid .offset.by-six {
     margin-left: 490px; }
-  .structure-main .offset.by-seven {
+  .structure-grid .offset.by-seven {
     margin-left: 570px; }
-  .structure-main .offset.by-eight {
+  .structure-grid .offset.by-eight {
     margin-left: 650px; }
-  .structure-main .offset.by-nine {
+  .structure-grid .offset.by-nine {
     margin-left: 730px; }
-  .structure-main .offset.by-ten {
+  .structure-grid .offset.by-ten {
     margin-left: 810px; }
-  .structure-main .offset.by-eleven {
+  .structure-grid .offset.by-eleven {
     margin-left: 890px; } }
 @media screen and (min-width: 720px) {
-  .structure-main .mobile-only {
+  .structure-grid .mobile-only {
     display: none; } }
 @media screen and (max-width: 720px) {
-  .structure-main .tablet-only {
+  .structure-grid .tablet-only {
     display: none; } }
 @media screen and (min-width: 960px) {
-  .structure-main .tablet-only {
+  .structure-grid .tablet-only {
     display: none; } }
 @media screen and (max-width: 960px) {
-  .structure-main .desktop-only {
+  .structure-grid .desktop-only {
     display: none; } }
 
-.structure-sidebar + .structure-main {
-  margin-left: 0; }
-  @media screen and (min-width: 960px) {
-    .structure-sidebar + .structure-main {
-      margin-left: 240px; } }
-  @media screen and (min-width: 1280px) {
-    .structure-sidebar + .structure-main {
-      margin-left: 320px; } }
-  .structure-sidebar + .structure-main .row {
-    width: 320px; }
-    @media screen and (min-width: 960px) {
-      .structure-sidebar + .structure-main .row {
-        width: 720px; } }
-    @media screen and (min-width: 1280px) {
-      .structure-sidebar + .structure-main .row {
-        width: 960px; } }
-  .structure-sidebar + .structure-main .column, .structure-sidebar + .structure-main .columns {
-    margin-left: 10px;
-    margin-right: 10px; }
-    .structure-sidebar + .structure-main .column .column, .structure-sidebar + .structure-main .column .columns, .structure-sidebar + .structure-main .columns .column, .structure-sidebar + .structure-main .columns .columns {
-      margin-right: 0;
-      margin-left: 0; }
-      @media screen and (min-width: 960px) {
-        .structure-sidebar + .structure-main .column .column, .structure-sidebar + .structure-main .column .columns, .structure-sidebar + .structure-main .columns .column, .structure-sidebar + .structure-main .columns .columns {
-          margin-right: 0;
-          margin-left: 20px; }
-          .structure-sidebar + .structure-main .column .column:first-child, .structure-sidebar + .structure-main .column .column.first, .structure-sidebar + .structure-main .column .columns:first-child, .structure-sidebar + .structure-main .column .columns.first, .structure-sidebar + .structure-main .columns .column:first-child, .structure-sidebar + .structure-main .columns .column.first, .structure-sidebar + .structure-main .columns .columns:first-child, .structure-sidebar + .structure-main .columns .columns.first {
-            margin-left: 0; } }
-  .structure-sidebar + .structure-main .one {
-    width: 300px; }
-  .structure-sidebar + .structure-main .two {
-    width: 300px; }
-  .structure-sidebar + .structure-main .three {
-    width: 300px; }
-  .structure-sidebar + .structure-main .four {
-    width: 300px; }
-  .structure-sidebar + .structure-main .five {
-    width: 300px; }
-  .structure-sidebar + .structure-main .six {
-    width: 300px; }
-  .structure-sidebar + .structure-main .seven {
-    width: 300px; }
-  .structure-sidebar + .structure-main .eight {
-    width: 300px; }
-  .structure-sidebar + .structure-main .nine {
-    width: 300px; }
-  .structure-sidebar + .structure-main .ten {
-    width: 300px; }
-  .structure-sidebar + .structure-main .eleven {
-    width: 300px; }
-  .structure-sidebar + .structure-main .twelve {
-    width: 300px; }
-  .structure-sidebar + .structure-main .offset.by-one {
-    margin-left: 10px; }
-  .structure-sidebar + .structure-main .offset.by-two {
-    margin-left: 10px; }
-  .structure-sidebar + .structure-main .offset.by-three {
-    margin-left: 10px; }
-  .structure-sidebar + .structure-main .offset.by-four {
-    margin-left: 10px; }
-  .structure-sidebar + .structure-main .offset.by-five {
-    margin-left: 10px; }
-  .structure-sidebar + .structure-main .offset.by-six {
-    margin-left: 10px; }
-  .structure-sidebar + .structure-main .offset.by-seven {
-    margin-left: 10px; }
-  .structure-sidebar + .structure-main .offset.by-eight {
-    margin-left: 10px; }
-  .structure-sidebar + .structure-main .offset.by-nine {
-    margin-left: 10px; }
-  .structure-sidebar + .structure-main .offset.by-ten {
-    margin-left: 10px; }
-  .structure-sidebar + .structure-main .offset.by-eleven {
-    margin-left: 10px; }
-  @media screen and (min-width: 960px) {
-    .structure-sidebar + .structure-main .one {
-      width: 40px; }
-    .structure-sidebar + .structure-main .two {
-      width: 100px; }
-    .structure-sidebar + .structure-main .three {
-      width: 160px; }
-    .structure-sidebar + .structure-main .four {
-      width: 220px; }
-    .structure-sidebar + .structure-main .five {
-      width: 280px; }
-    .structure-sidebar + .structure-main .six {
-      width: 340px; }
-    .structure-sidebar + .structure-main .seven {
-      width: 400px; }
-    .structure-sidebar + .structure-main .eight {
-      width: 460px; }
-    .structure-sidebar + .structure-main .nine {
-      width: 520px; }
-    .structure-sidebar + .structure-main .ten {
-      width: 580px; }
-    .structure-sidebar + .structure-main .eleven {
-      width: 640px; }
-    .structure-sidebar + .structure-main .twelve {
-      width: 700px; }
-    .structure-sidebar + .structure-main .offset.by-one {
-      margin-left: 70px; }
-    .structure-sidebar + .structure-main .offset.by-two {
-      margin-left: 130px; }
-    .structure-sidebar + .structure-main .offset.by-three {
-      margin-left: 190px; }
-    .structure-sidebar + .structure-main .offset.by-four {
-      margin-left: 250px; }
-    .structure-sidebar + .structure-main .offset.by-five {
-      margin-left: 310px; }
-    .structure-sidebar + .structure-main .offset.by-six {
-      margin-left: 370px; }
-    .structure-sidebar + .structure-main .offset.by-seven {
-      margin-left: 430px; }
-    .structure-sidebar + .structure-main .offset.by-eight {
-      margin-left: 490px; }
-    .structure-sidebar + .structure-main .offset.by-nine {
-      margin-left: 550px; }
-    .structure-sidebar + .structure-main .offset.by-ten {
-      margin-left: 610px; }
-    .structure-sidebar + .structure-main .offset.by-eleven {
-      margin-left: 670px; } }
-  @media screen and (min-width: 1280px) {
-    .structure-sidebar + .structure-main .one {
-      width: 60px; }
-    .structure-sidebar + .structure-main .two {
-      width: 140px; }
-    .structure-sidebar + .structure-main .three {
-      width: 220px; }
-    .structure-sidebar + .structure-main .four {
-      width: 300px; }
-    .structure-sidebar + .structure-main .five {
-      width: 380px; }
-    .structure-sidebar + .structure-main .six {
-      width: 460px; }
-    .structure-sidebar + .structure-main .seven {
-      width: 540px; }
-    .structure-sidebar + .structure-main .eight {
-      width: 620px; }
-    .structure-sidebar + .structure-main .nine {
-      width: 700px; }
-    .structure-sidebar + .structure-main .ten {
-      width: 780px; }
-    .structure-sidebar + .structure-main .eleven {
-      width: 860px; }
-    .structure-sidebar + .structure-main .twelve {
-      width: 940px; }
-    .structure-sidebar + .structure-main .offset.by-one {
-      margin-left: 90px; }
-    .structure-sidebar + .structure-main .offset.by-two {
-      margin-left: 170px; }
-    .structure-sidebar + .structure-main .offset.by-three {
-      margin-left: 250px; }
-    .structure-sidebar + .structure-main .offset.by-four {
-      margin-left: 330px; }
-    .structure-sidebar + .structure-main .offset.by-five {
-      margin-left: 410px; }
-    .structure-sidebar + .structure-main .offset.by-six {
-      margin-left: 490px; }
-    .structure-sidebar + .structure-main .offset.by-seven {
-      margin-left: 570px; }
-    .structure-sidebar + .structure-main .offset.by-eight {
-      margin-left: 650px; }
-    .structure-sidebar + .structure-main .offset.by-nine {
-      margin-left: 730px; }
-    .structure-sidebar + .structure-main .offset.by-ten {
-      margin-left: 810px; }
-    .structure-sidebar + .structure-main .offset.by-eleven {
-      margin-left: 890px; } }
-  @media screen and (min-width: 960px) {
-    .structure-sidebar + .structure-main .mobile-only {
-      display: none; } }
-  @media screen and (max-width: 960px) {
-    .structure-sidebar + .structure-main .tablet-only {
-      display: none; } }
-  @media screen and (min-width: 1280px) {
-    .structure-sidebar + .structure-main .tablet-only {
-      display: none; } }
-  @media screen and (max-width: 1280px) {
-    .structure-sidebar + .structure-main .desktop-only {
-      display: none; } }
-
-.structure-sidebar {
+#structure-sidebar {
   position: fixed;
   overflow: auto;
+  overflow-x: hidden;
   top: 0;
   bottom: 0;
   left: 0;
-  width: 100%; }
-  .structure-sidebar ul {
-    list-style: none;
-    margin: 0;
-    padding: 0; }
-    .structure-sidebar ul li {
+  width: 10px;
+  z-index: 100; }
+  #structure-sidebar nav ul {
+    list-style: none; }
+    #structure-sidebar nav ul, #structure-sidebar nav ul li {
       margin: 0;
       padding: 0; }
-  @media screen and (min-width: 960px) {
-    .structure-sidebar {
-      width: 240px;
-      top: 80px;
-      bottom: 0; } }
   @media screen and (min-width: 1280px) {
-    .structure-sidebar {
-      width: 320px;
-      top: 80px;
-      bottom: 0; } }
-
-.structure-header {
-  overflow: auto;
-  clear: both;
-  height: 80px; }
-  @media screen and (min-width: 720px) {
-    .structure-header {
-      height: 80px; } }
-  @media screen and (min-width: 960px) {
-    .structure-header {
-      height: 80px; } }
-
-.structure-footer {
-  overflow: auto;
-  clear: both;
-  height: 0; }
-  @media screen and (min-width: 720px) {
-    .structure-footer {
-      height: 0; } }
-  @media screen and (min-width: 960px) {
-    .structure-footer {
-      height: 0; } }
+    #structure-sidebar {
+      width: 320px; } }
+  @media screen and (min-width: 1280px) {
+    #structure-sidebar ~ .structure-content {
+      margin-left: 320px; } }
+  #structure-sidebar:not(.touch-enabled):hover, #structure-sidebar.active {
+    width: 100%; }
+    @media screen and (min-width: 720px) {
+      #structure-sidebar:not(.touch-enabled):hover, #structure-sidebar.active {
+        width: 320px; } }
+    @media screen and (min-width: 960px) {
+      #structure-sidebar:not(.touch-enabled):hover, #structure-sidebar.active {
+        width: 320px; } }
+  #structure-sidebar nav {
+    width: 100%; }
+    @media screen and (min-width: 720px) {
+      #structure-sidebar nav {
+        width: 320px; } }
+    @media screen and (min-width: 960px) {
+      #structure-sidebar nav {
+        width: 320px; } }

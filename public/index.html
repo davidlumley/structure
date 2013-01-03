@@ -2,125 +2,162 @@
 	<head>
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
 		<title>Structure</title>
-		<link rel="stylesheet" href="css/structure.css" type="text/css" media="screen" charset="utf-8">
+		<link rel="stylesheet" href="/css/structure.css" type="text/css">
+		<!--[if lte IE 8]>
+			<link rel="stylesheet" href="/css/structure-ie.css" type="text/css">
+		<![endif]-->
+		<meta name="viewport" content="width=device-width">
 		<style type="text/css" media="screen">
 			body {
 				font-family	: sans-serif;
+				line-height	: 1.8em;
+				font-size		: 13px;
 			}
-			.structure-sidebar {
+
+			#structure-sidebar {
 				background-color: #333;
 				color: #ddd;
 			}
 
-			.structure-main {
+			.structure-grid {
 				background-color: #eee;
 			}
+			
 		</style>
 	</head>
 	<body>
-		<header class="structure-header">
-			<h1>Structure</h1>
+
+		<section id="structure-sidebar">
+			<nav>
+				<h1>Sidebar</h1>
+				<ul>
+					<li><a href="#docs-responsive-grid">Responsive Grid</a></li>
+					<li><a href="#docs-responsive-disclosure">Responsive Disclosure</a></li>
+					<li><a href="#docs-dynamic-sidebar">Dynamic Sidebar</a></li>
+					<li><a href="#docs-usage">Usage</a></li>
+				</ul>
+			</nav>
+		</section>
+
+		<header class="structure-content structure-grid">
+			<div class="row">
+				<h1 class="twelve columns">Structure</h1>
+			</div>
 		</header>
 		
-		<div class="structure-sidebar">
-			<ul>
-				<li>A Sidebar Item</li>
-				<li>Another Sidebar Item</li>
-				<li>A Third Sidebar Item</li>
-				<li>BEES, EVERYWHERE</li>
-				<li>A Sidebar Item</li>
-				<li>Another Sidebar Item</li>
-				<li>A Third Sidebar Item</li>
-				<li>BEES, EVERYWHERE</li>
-				<li>A Sidebar Item</li>
-				<li>Another Sidebar Item</li>
-				<li>A Third Sidebar Item</li>
-				<li>BEES, EVERYWHERE</li>
-				<li>A Sidebar Item</li>
-				<li>Another Sidebar Item</li>
-				<li>A Third Sidebar Item</li>
-				<li>BEES, EVERYWHERE</li>
-				<li>A Sidebar Item</li>
-				<li>Another Sidebar Item</li>
-				<li>A Third Sidebar Item</li>
-				<li>BEES, EVERYWHERE</li>
-			</ul>
-		</div>
-		
-		<div class="structure-main">
+		<section class="structure-content structure-grid">
 			<article class="row">
-				<div class="twelve columns mobile-only">
+				<h1 class="twelve columns" id="docs-responsive-grid">Responsive Grid</h1>
+				<div class="six columns">
+					<h2>twelve column grid</h2>
+					<p>Structure uses <a href="http://github.com/theidealab/concrete">theidealab/concrete</a> to provide a solid grid foundation. Concrete's grid is responsive for mobile, tablet, and desktop resolutions, and is fairly flexible.</p>
+					<p>Columns can be specified by using the <code>column</code> or <code>columns</code> class, along with a numeral between <code>one</code> and <code>twelve</code>. For example two columns beside eachother might use <code>class="four columns"</code> and <code>class="eight columns"</code>. It doesn't matter what you do, as long as they add up to <strong>twelve</strong>.</p>
+					<p><code>columns</code> are contained within a <code>row</code> allowing for DOM elements to be created around the rows and outside of the column structure with a high level of flexibility.
+					</p>
+				</div>
+				<div class="six columns">
+					<h2>structure-grid class</h2>
+					<p>The grid can be used by adding the class <code>structure-grid</code> to the parent element:</p>
+					<pre>
+						<code>
+&lt;div class="structure-grid">
+  &lt;section class="row">
+    &lt;article class="eight columns">
+      &lt;!-- content -->
+    &lt;/article>
+    &lt;nav class="four columns">
+      &lt;!-- navigation -->
+    &lt;/nav>
+  &lt;/section>
+&lt;/div>
+						</code>
+					</pre>
+				</div>
+			</article>
+			<article class="row">
+				<h1 class="twelve columns" id="docs-responsive-disclosure">Responsive Disclosure</h1>
+				<div class="six columns">
+					<h2>mobile, tablet, and desktop classes</h2>
+					<p>Structure, using Concrete, provides the <code>mobile-only</code>, <code>tablet-only</code>, and <code>desktop-only</code> classes to display content only below <code>720px</code>, between <code>720px</code> and <code>960px</code>, and above <code>960px</code> respectively.
+				</div>
+				<div class="six columns mobile-only">
+					<h2>mobile-only class</h2>
 					<p>This row will only show up on at widths smaller than 720px</p>
 				</div>
 				
-				<div class="twelve columns tablet-only">
+				<div class="six columns tablet-only">
+					<h2>tablet-only class</h2>
 					<p>This row will only show up between 720px and 960px widths</p>
 				</div>
 				
-				<div class="twelve columns desktop-only">
+				<div class="six columns desktop-only">
+					<h2>desktop-only class</h2>
 					<p>This row will only show up at 960px or greater widths</p>
 				</div>
 			</article>
+
 			<article class="row">
-				<div class="four columns">
-					<p>I'm going to murder you... You bloody woman! Carrie, Moss! First scene in Carrie! Oh. Okay No, no, that's the music you heard when it come on. 0115... no... 0118... no... 0118 999 ... 3. Hello? Is this the emergency services? Then which country am I speaking to? Hello? Hello? Unbelievable! Some idiot disabled his firewall, meaning all the computers on Seven are teeming with viruses, plus I've just had to walk all the way down the motherfudging stairs, because the lifts are broken AGAIN! Yeah, you do know how a button works don't you? No, not on clothes. I don't see how they couldn't just keep it as it was. How hard is it to remember 911?</p>
-				</div>
-        	
-				<div class="four columns">
-					<p>Yes! Yesterday's jam. That is what we are to them!... Actually, that doesn't work, as a thing, because, you know, jam lasts for ages. A gay musical, called Gay. That's quite gay. Gay musical? Aren't all musicals gay? This must be, like, the gayest musical ever. You're not comfortable with your sexuality? Oh, I'm very comfortable with my sexuality, I just don't want to be slapped in the face with their sexuality. It's like they're pally-wally with us when there's a problem with their printer, but once it's fixed... See the driver hooks a function by patching the system call table, so its not safe to unload it unless another thread's about to jump in there and do its stuff, and you don't want to end up in the middle of invalid memory! When I started Reynholm Industries, I had just two things in my possession: a dream and 6 million pounds. I've got Aunt Irma visiting. Oh, do you not like Aunt Irma? I've got an aunt like that.</p>
-				</div>
-				
-				<div class="four columns">
-					<p>Might want to play a bit hard to get. Yes! Yesterday's jam. That is what we are to them!... Actually, that doesn't work, as a thing, because, you know, jam lasts for ages. Yes! If there were such a thing as a drudgeon, that is what we'd be to them. You know, it's high tide. But we're not on the coast. I'm closed for maintenance! Closed for maintenance? I've fallen to the communists! Well, they do have some strong arguments. Today I have a business empire the like of which the world has never seen the like of which. I hope it doesn't sound arrogant when I say that I am the greatest man in the world! Hello, IT. Have you tried forcing an unexpected reboot? From today, dialing 999 won't get you the Emergency Services, and that's not the only thing that's changing!</p>
-				</div>
-			</article>
-			<article class="row">
-				<div class="three columns">
-					<p>See the driver hooks a function by patching the system call table, so its not safe to unload it unless another thread's about to jump in there and do its stuff, and you don't want to end up in the middle of invalid memory! They just toss us away like yesterday's jam. It's my term for my time of the month. Oh. What time of the month? The weekend? Carrie, Moss! First scene in Carrie! Oh. Okay Might want to play a bit hard to get. Yeah, you need to turn it on... uh, the button turns it on. So, remember the new number! 0118 999! 88199, 9119 725! ... 3!</p>
-				</div>
-				<div class="three columns">
-					<p>Nicer ambulances, faster response times and better looking drivers mean they're not just the Emergency Services, they're your Emergency Services. While he was eating, did you hear anyone laughing? Like... in the kitchen area? Yes! Yes I did, actually, yes I did. That'd be trouser food! If anyone was ever rude to me, I used to carry their food around in my trousers. Oh my God! Before you brought it to their table? No, after! Of course, before! Why would I do it after? Yes! Yesterday's jam. That is what we are to them!... Actually, that doesn't work, as a thing, because, you know, jam lasts for ages. I'll put this over here, with the rest of the fire. I'll put this over here, with the rest of the fire. No, no there you go, no there you go. I just heard it come on.</p>
-				</div>
-				<div class="three columns">
-					<p>They just toss us away like yesterday's jam. It's my term for my time of the month. Oh. What time of the month? The weekend? Carrie, Moss! First scene in Carrie! Oh. Okay Oh really? Then why don't you come down and make me then. Hello, IT. Have you tried turning it off and on again? I've got Aunt Irma visiting. Oh, do you not like Aunt Irma? I've got an aunt like that. Yeah, you need to turn it on... uh, the button turns it on.</p>
-				</div>
-				<div class="three columns">
-					<p>Dear Sir stroke Madam, I am writing to inform you of a fire which has broken out at the premises of... 0115... no... 0118... no... 0118 999 ... 3. Hello? Is this the emergency services? Then which country am I speaking to? Hello? Hello? Oh my God. I didn't even know Smarties made a cereal. They don't. It's just Smarties in a bowl with milk. I am a man, he's a man, we're men! Ok, tell me how your feeling. I feel delicate... and annoyed, and... I think I'm ugly. Graphic homoeroticism? Does that mean they're going to get them out? Dear Sir stroke Madam, I am writing to inform you of a fire which has broken out at the premises of... You can come down here any time and I'll be waiting for you! [slams down phone] That told her!</p>
-				</div>
-			</article>
-			
-			<article class="row">
+				<h1 class="twelve columns" id="docs-responsive-disclosure">Dynamic Sidebar</h1>
 				<div class="six columns">
-					<p>We don't need no education. Yes you do. You've just used a double negative. Carrie, Moss! First scene in Carrie! Oh. Okay I'm a 32 year old IT-man who works in a basement. Yes, I do the whole Lonely Hearts thing! I'll put this over here, with the rest of the fire. Graphic homoeroticism? Does that mean they're going to get them out? You mean 999. Yes, yes, I mean 999! Yeah, I know. That's the American one, you berk! Huh, what you think I'm afraid of you? I'm not afraid of you.</p>
-				</div>
-				<div class='six columns'>
-					<p>He's had quite an evening. Someone stole his wheelchair. Did you see who it was? Red bearded man. It's my term for my time of the month. Oh. What time of the month? The weekend? How long have you been disabled? Ten years? Ten years, and how did it happen? If that's not a rude question. Acid? Nicer ambulances, faster response times and better looking drivers mean they're not just the Emergency Services, they're your Emergency Services. OK. Moss, what did you have for breakfast this morning? Smarties cereal. No, no, that's the music you heard when it come on. Oh my God. I didn't even know Smarties made a cereal. They don't. It's just Smarties in a bowl with milk.</p>
-				</div>
-			</article>
-			<article class="row">
-				<div class="six columns">
-					<div class="three columns">
-						<p>See the driver hooks a function by patching the system call table, so its not safe to unload it unless another thread's about to jump in there and do its stuff, and you don't want to end up in the middle of invalid memory! They just toss us away like yesterday's jam. It's my term for my time of the month. Oh. What time of the month? The weekend? Carrie, Moss! First scene in Carrie! Oh. Okay Might want to play a bit hard to get. Yeah, you need to turn it on... uh, the button turns it on. So, remember the new number! 0118 999! 88199, 9119 725! ... 3!</p>
-					</div>
-					<div class="three columns">
-						<p>Nicer ambulances, faster response times and better looking drivers mean they're not just the Emergency Services, they're your Emergency Services. While he was eating, did you hear anyone laughing? Like... in the kitchen area? Yes! Yes I did, actually, yes I did. That'd be trouser food! If anyone was ever rude to me, I used to carry their food around in my trousers. Oh my God! Before you brought it to their table? No, after! Of course, before! Why would I do it after? Yes! Yesterday's jam. That is what we are to them!... Actually, that doesn't work, as a thing, because, you know, jam lasts for ages. I'll put this over here, with the rest of the fire. I'll put this over here, with the rest of the fire. No, no there you go, no there you go. I just heard it come on.</p>
-					</div>
+					<h2>Responsive Sidebar</h2>
+					<p>For desktop users without touch screens the sidebar will appear all the time at high resolutions, before shrinking down to displaying only on hover at lower resolutions</p>
+					<p>Mobile and touch screen users can swipe to show and hide the sidebar.</p>
+					<p>While the sidebar is displayed at high resolutions, any sibling with the class <code>structure-content</code> will have its margin adjusted so it displays correctly.</p>
 				</div>
 				<div class="six columns">
-					<div class="three columns">
-						<p>They just toss us away like yesterday's jam. It's my term for my time of the month. Oh. What time of the month? The weekend? Carrie, Moss! First scene in Carrie! Oh. Okay Oh really? Then why don't you come down and make me then. Hello, IT. Have you tried turning it off and on again? I've got Aunt Irma visiting. Oh, do you not like Aunt Irma? I've got an aunt like that. Yeah, you need to turn it on... uh, the button turns it on.</p>
-					</div>
-					<div class="three columns">
-						<p>Dear Sir stroke Madam, I am writing to inform you of a fire which has broken out at the premises of... 0115... no... 0118... no... 0118 999 ... 3. Hello? Is this the emergency services? Then which country am I speaking to? Hello? Hello? Oh my God. I didn't even know Smarties made a cereal. They don't. It's just Smarties in a bowl with milk. I am a man, he's a man, we're men! Ok, tell me how your feeling. I feel delicate... and annoyed, and... I think I'm ugly. Graphic homoeroticism? Does that mean they're going to get them out? Dear Sir stroke Madam, I am writing to inform you of a fire which has broken out at the premises of... You can come down here any time and I'll be waiting for you! [slams down phone] That told her!</p>
-					</div>
+					<h2>structure-sidebar id</h2>
+					<p>The sidebar must be added above other elements in order to use the sibling selector [<code>~</code>] when the sidebar is displayed out.</p>
+					<pre>
+						<code>
+&lt;section id="structure-sidebar">
+  &lt;nav>
+    &lt;!-- navigation list -->
+  &lt;/nav>
+&lt;/section>
+&lt;section class="structure-grid structure-content">
+  &lt;!-- content -->
+&lt;/section>
+						</code>
+					</pre> 
 				</div>
 			</article>
-			<footer class="row">
-				<p class="four columns offset by-eight">
-					Filler text provided by <a href="http://www.itcrowdipsum.com">www.itcrowdipsum.com</a>.
-				</p>
+			<article class="row">
+				<h1 class="twelve columns" id="docs-usage">Usage</h1>
+				<div class="six columns">
+					<h2>Stylesheets</h2>
+					<p>Include the stylesheet (before your others so you can override styles if need be).</p>
+					<pre><code>
+&lt;link rel="stylesheet" href="/css/structure.css" type="text/css">
+					</code></pre>
+					<p>If you're targeting versions of IE earlier than 9, make sure to include the conditional IE stylesheet, as these versions do not make use of the <code>:not</code> CSS selector</p>
+					<pre><code>
+&lt;!--[if lte IE 8]>
+  &lt;link rel="stylesheet" href="/css/structure-ie.css" type="text/css">
+&lt;![endif]-->
+					</code></pre>
+					<p>Ensure mobile devices function as expected by adding the viewport tag.</p>
+					<pre><code>
+&lt;meta name="viewport" content="width=device-width"></code></pre>
+					<p>If for any reason you wish to customise Structure further, the SCSS files are found in <code>scss/structure</code>.</p>
+				</div>
+				<div class="six columns">
+					<h2>Javascripts</h2>
+					<p>By default, the sidebar is shown on hover, and hidden when not. Adding Structure's javascript allows touch enabled devices to swipe to show and hide the sidebar, for a more native experience.</p>
+					<pre><code>
+&lt;script type="text/javascript" src="/js/structure.js">
+&lt;/script></code></pre>
+					<p>The original coffeescript file can be found in <code>coffee</code>.</p>
+				</div>
+			</article>
+		</section>
+		<footer class="structure-content structure-grid">
+				<div class="row">
+					<p class="four columns offset by-eight">
+						Filler text provided by <a href="http://www.itcrowdipsum.com">www.itcrowdipsum.com</a>.
+					</p>
+				</div>
 			</footer>
-		</div>
+		
 	</body>
 </html>
 

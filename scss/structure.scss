@@ -1,2 +1,7 @@
-@import 'variables';
-@import 'elements';
+@import 'structure/variables';
+@import 'structure/mixins';
+
+@import	'structure/elements';
+
+@import	'structure/grid';
+@import 'structure/sidebar';

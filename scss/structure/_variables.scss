@@ -1,26 +1,9 @@
-$margin 						: 10px;
+$margin 								: 10px;
 
-$desktop-width			: 960px;
-$tablet-width				: 720px;
-$mobile-width				: 320px;
-
-$header-desktop-height	: 80px;
-$header-tablet-height		: 80px;
-$header-mobile-height		: 80px;
-
-$footer-desktop-height	: 0;
-$footer-tablet-height		: 0;
-$footer-mobile-height		: 0;
-
-$desktop-transition	: $desktop-width;
-$tablet-transition	: $tablet-width;
-$mobile-transition	: $mobile-width;
+$desktop-width					: 960px;
+$tablet-width						: 720px;
+$mobile-width						: 320px;
 
 $sidebar-desktop-width	:	320px;
-$sidebar-tablet-width		:	240px;
+$sidebar-tablet-width		:	320px;
 $sidebar-mobile-width		:	100%;
-
-$mobile-single-sidebar-transition		: $mobile-width;
-$tablet-single-sidebar-transition		: $tablet-width + $sidebar-tablet-width;
-$desktop-single-sidebar-transition	: $desktop-width + $sidebar-desktop-width;
-
