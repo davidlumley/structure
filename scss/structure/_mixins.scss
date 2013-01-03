@@ -13,3 +13,10 @@
 ){
 	margin-left	: (($width / 12) * $columns + $margin) - $px-offset;
 }
+
+@mixin transform(
+	$property	: scale(1.0)
+){
+	-webkit-transform	: $property;
+	transform	: $property;
+}

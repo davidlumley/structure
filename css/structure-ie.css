@@ -1,8 +1,13 @@
-#structure-sidebar:hover, #structure-sidebar.active {
-  width: 100%; }
+#structure-sidebar {
+  left: -97%; }
   @media screen and (min-width: 720px) {
-    #structure-sidebar:hover, #structure-sidebar.active {
-      width: 320px; } }
+    #structure-sidebar {
+      left: -310px; } }
   @media screen and (min-width: 960px) {
-    #structure-sidebar:hover, #structure-sidebar.active {
-      width: 320px; } }
+    #structure-sidebar {
+      left: -310px; } }
+  @media screen and (min-width: 1280px) {
+    #structure-sidebar {
+      left: 0; } }
+  #structure-sidebar:hover, #structure-sidebar.active {
+    left: 0; }

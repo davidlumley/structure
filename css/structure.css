@@ -189,27 +189,36 @@ html, body {
   top: 0;
   bottom: 0;
   left: 0;
-  width: 10px;
-  z-index: 100; }
+  z-index: 100;
+  width: 100%;
+  -webkit-transform: scale(1) translate3d(-97%, 0, 0);
+  transform: scale(1) translate3d(-97%, 0, 0); }
+  @media screen and (min-width: 720px) {
+    #structure-sidebar {
+      width: 320px;
+      -webkit-transform: scale(1) translate3d(-310px, 0, 0);
+      transform: scale(1) translate3d(-310px, 0, 0); } }
+  @media screen and (min-width: 960px) {
+    #structure-sidebar {
+      width: 320px;
+      -webkit-transform: scale(1) translate3d(-310px, 0, 0);
+      transform: scale(1) translate3d(-310px, 0, 0); } }
+  @media screen and (min-width: 1280px) {
+    #structure-sidebar {
+      width: 320px;
+      -webkit-transform: scale(1) translate3d(0, 0, 0);
+      transform: scale(1) translate3d(0, 0, 0); } }
+  @media screen and (min-width: 1280px) {
+    #structure-sidebar ~ .structure-content {
+      margin-left: 320px; } }
+  #structure-sidebar:not(.touch-enabled):hover, #structure-sidebar.active {
+    -webkit-transform: scale(1) translate3d(0, 0, 0);
+    transform: scale(1) translate3d(0, 0, 0); }
   #structure-sidebar nav ul {
     list-style: none; }
     #structure-sidebar nav ul, #structure-sidebar nav ul li {
       margin: 0;
       padding: 0; }
-  @media screen and (min-width: 1280px) {
-    #structure-sidebar {
-      width: 320px; } }
-  @media screen and (min-width: 1280px) {
-    #structure-sidebar ~ .structure-content {
-      margin-left: 320px; } }
-  #structure-sidebar:not(.touch-enabled):hover, #structure-sidebar.active {
-    width: 100%; }
-    @media screen and (min-width: 720px) {
-      #structure-sidebar:not(.touch-enabled):hover, #structure-sidebar.active {
-        width: 320px; } }
-    @media screen and (min-width: 960px) {
-      #structure-sidebar:not(.touch-enabled):hover, #structure-sidebar.active {
-        width: 320px; } }
   #structure-sidebar nav {
     width: 100%; }
     @media screen and (min-width: 720px) {

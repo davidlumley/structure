@@ -2,13 +2,20 @@
 @import 'structure/mixins';
 
 #structure-sidebar {
+	left 				: -97%;
+
+	@media screen and (min-width: $tablet-width) {
+		left			: -($sidebar-tablet-width - $margin);
+	}
+	@media screen and (min-width: $desktop-width) {
+		left			: -($sidebar-desktop-width - $margin);
+	}
+
+	@media screen and (min-width: $desktop-width + $sidebar-desktop-width) {
+		left			: 0;
+	}
+
 	&:hover, &.active {
-		width			: $sidebar-mobile-width;
-		@media screen and (min-width: $tablet-width) {
-			width			: $sidebar-tablet-width;
-		}
-		@media screen and (min-width: $desktop-width) {
-			width			: $sidebar-desktop-width;
-		}
+		left			: 0;
 	}
 }

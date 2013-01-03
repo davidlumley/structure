@@ -8,22 +8,24 @@
 
 	left				: 0;
 
-	width				: $margin;
-
 	z-index			: 100;
 
-	nav {
-		ul {
-			list-style	: none;
-			&, li {
-				margin			: 0;
-				padding			: 0;
-			}
-		}
+	width			: $sidebar-mobile-width;
+
+	@include transform(scale(1.0) translate3d(-97%,0,0));
+
+	@media screen and (min-width: $tablet-width) {
+		width			: $sidebar-tablet-width;
+		@include transform(scale(1.0) translate3d(-($sidebar-tablet-width - $margin),0,0));
+	}
+	@media screen and (min-width: $desktop-width) {
+		width			: $sidebar-desktop-width;
+		@include transform(scale(1.0) translate3d(-($sidebar-desktop-width - $margin),0,0));
 	}
 
 	@media screen and (min-width: $desktop-width + $sidebar-desktop-width) {
 		width					: $sidebar-desktop-width;
+		@include transform(scale(1.0) translate3d(0,0,0));
 	}
 
 	& ~ .structure-content {
@@ -33,12 +35,16 @@
 	}
 
 	&:not(.touch-enabled):hover, &.active {
-		width			: $sidebar-mobile-width;
-		@media screen and (min-width: $tablet-width) {
-			width			: $sidebar-tablet-width;
-		}
-		@media screen and (min-width: $desktop-width) {
-			width			: $sidebar-desktop-width;
+		@include transform(scale(1.0) translate3d(0,0,0));
+	}
+
+	nav {
+		ul {
+			list-style	: none;
+			&, li {
+				margin			: 0;
+				padding			: 0;
+			}
 		}
 	}
 
