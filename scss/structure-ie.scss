@@ -1,0 +1,14 @@
+@import 'structure/variables';
+@import 'structure/mixins';
+
+#structure-sidebar {
+	&:hover, &.active {
+		width			: $sidebar-mobile-width;
+		@media screen and (min-width: $tablet-width) {
+			width			: $sidebar-tablet-width;
+		}
+		@media screen and (min-width: $desktop-width) {
+			width			: $sidebar-desktop-width;
+		}
+	}
+}
