@@ -3,7 +3,7 @@
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
 		<title>Structure</title>
 		<link rel="stylesheet" href="/css/structure.css" type="text/css">
-		<!--[if lte IE 8]>
+		<!--[if lte IE 9]>
 			<link rel="stylesheet" href="/css/structure-ie.css" type="text/css">
 		<![endif]-->
 		<meta name="viewport" content="width=device-width">
@@ -129,9 +129,9 @@
 					<pre><code>
 &lt;link rel="stylesheet" href="/css/structure.css" type="text/css">
 					</code></pre>
-					<p>If you're targeting versions of IE earlier than 9, make sure to include the conditional IE stylesheet, as these versions do not make use of the <code>:not</code> CSS selector</p>
+					<p>If you're targeting versions of IE earlier than 10, make sure to include the conditional IE stylesheet, as these versions do not make use of the <code>:not</code> CSS selector, nor the transform3d property.</p>
 					<pre><code>
-&lt;!--[if lte IE 8]>
+&lt;!--[if lte IE 9]>
   &lt;link rel="stylesheet" href="/css/structure-ie.css" type="text/css">
 &lt;![endif]-->
 					</code></pre>
@@ -157,7 +157,7 @@
 					</p>
 				</div>
 			</footer>
-		
+			<script type="text/javascript" src="/js/structure.js"></script>
 	</body>
 </html>
 
