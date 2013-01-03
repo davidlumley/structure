@@ -1,7 +1,7 @@
 sidebar					= document.getElementById 'structure-sidebar'
 
 if typeof Touch == "object"
-
+	sidebar.classList.add 'touch-enabled'
 	origin		=
 		'x'	: undefined
 		'y'	: undefined
@@ -44,6 +44,3 @@ if typeof Touch == "object"
 	document.addEventListener("touchstart",		touch_start);
 	document.addEventListener("touchend",			touch_end);
 	document.addEventListener("touchmove",		touch_move);
-
-else
-	sidebar.classList.add 'no-touch'

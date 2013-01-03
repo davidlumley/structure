@@ -12,17 +12,27 @@
 
 	z-index			: 100;
 
+	nav {
+		ul {
+			list-style	: none;
+			&, li {
+				margin			: 0;
+				padding			: 0;
+			}
+		}
+	}
+
 	@media screen and (min-width: $desktop-width + $sidebar-desktop-width) {
 		width					: $sidebar-desktop-width;
 	}
 
-	& ~ .structure-header, & ~ .structure-main {
+	& ~ .structure-header, & ~ .structure-grid {
 		@media screen and (min-width: $desktop-width + $sidebar-desktop-width) {
 			margin-left	: $sidebar-desktop-width;
 		}
 	}
 
-	&.no-touch:hover, &.active {
+	&:not(.touch-enabled):hover, &.active {
 		width			: $sidebar-mobile-width;
 		@media screen and (min-width: $tablet-width) {
 			width			: $sidebar-tablet-width;
