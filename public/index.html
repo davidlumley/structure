@@ -3,6 +3,9 @@
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
 		<title>Structure</title>
 		<link rel="stylesheet" href="/css/structure.css" type="text/css">
+		<!--[if lte IE 8]>
+			<link rel="stylesheet" href="/css/structure-ie.css" type="text/css">
+		<![endif]-->
 		<meta name="viewport" content="width=device-width">
 		<style type="text/css" media="screen">
 			body {
@@ -125,6 +128,12 @@
 					<p>Include the stylesheet (before your others so you can override styles if need be).</p>
 					<pre><code>
 &lt;link rel="stylesheet" href="/css/structure.css" type="text/css">
+					</code></pre>
+					<p>If you're targeting versions of IE earlier than 9, make sure to include the conditional IE stylesheet, as these versions do not make use of the <code>:not</code> CSS selector</p>
+					<pre><code>
+&lt;!--[if lte IE 8]>
+  &lt;link rel="stylesheet" href="/css/structure-ie.css" type="text/css">
+&lt;![endif]-->
 					</code></pre>
 					<p>Ensure mobile devices function as expected by adding the viewport tag.</p>
 					<pre><code>
