@@ -17,6 +17,10 @@
 @mixin transform(
 	$property	: scale(1.0)
 ){
-	-webkit-transform	: $property;
-	transform					: $property;
+	-moz-transform						: $property;
+	-webkit-transform					: $property;
+	-o-transform							: $property;
+	-ms-transform							: $property;
+	transform									: $property;
 }
+
